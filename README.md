@@ -2,7 +2,7 @@
 
 ## Description of price-api 
 
-Spring Boot 3 and Java 17 application, built trying to follow the s.o.l.i.d. and clean design principles inspired by the hexagonal and inspired by hexafonal architecture style, that implements a REST service to get the priority price of a product.
+Spring Boot 3 and Java 17 application, built trying to follow the s.o.l.i.d. and clean design principles and inspired by hexagonal architecture style, that implements a REST web service to get the priority price of a product.
 
 The Domain layer descibes the entities Brand, Product and Price and the PriceRepository, wich describes a method to find entities which are used within an Application PriceUseCase.
 
