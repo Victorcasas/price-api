@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "c4649311-ead5-4277-9adb-23d2884492d6",
+		"name": "PRICE-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2298855"
+	},
+	"item": [
+		{
+			"name": "price-api",
+			"item": [
+				{
+					"name": "{brandId}",
+					"item": [
+						{
+							"name": "{productId}",
+							"item": [
+								{
+									"name": "To get priority price for brand/product IDs in a date",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=<dateTime>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"price-api",
+												":brandId",
+												":productId"
+											],
+											"query": [
+												{
+													"key": "date",
+													"value": "<dateTime>",
+													"description": "(Required) Price date"
+												}
+											],
+											"variable": [
+												{
+													"key": "brandId",
+													"value": "<long>",
+													"description": "(Required) Brand ID"
+												},
+												{
+													"key": "productId",
+													"value": "<long>",
+													"description": "(Required) Product ID"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "1/35455?date=2020-06-14T10:00:00",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=2020-06-14T10:00:00",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"price-api",
+														":brandId",
+														":productId"
+													],
+													"query": [
+														{
+															"key": "date",
+															"value": "2020-06-14T10:00:00",
+															"description": "(Required) Price date"
+														}
+													],
+													"variable": [
+														{
+															"key": "brandId",
+															"value": "1",
+															"description": "(Required) Brand ID"
+														},
+														{
+															"key": "productId",
+															"value": "35455",
+															"description": "(Required) Product ID"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										},
+										{
+											"name": "1/35455?date=2020-06-14T16:00:00",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=2020-06-14T16:00:00",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"price-api",
+														":brandId",
+														":productId"
+													],
+													"query": [
+														{
+															"key": "date",
+															"value": "2020-06-14T16:00:00",
+															"description": "(Required) Price date"
+														}
+													],
+													"variable": [
+														{
+															"key": "brandId",
+															"value": "1",
+															"description": "(Required) Brand ID"
+														},
+														{
+															"key": "productId",
+															"value": "35455",
+															"description": "(Required) Product ID"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										},
+										{
+											"name": "1/35455?date=2020-06-14T21:00:00",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=2020-06-14T21:00:00",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"price-api",
+														":brandId",
+														":productId"
+													],
+													"query": [
+														{
+															"key": "date",
+															"value": "2020-06-14T21:00:00",
+															"description": "(Required) Price date"
+														}
+													],
+													"variable": [
+														{
+															"key": "brandId",
+															"value": "1",
+															"description": "(Required) Brand ID"
+														},
+														{
+															"key": "productId",
+															"value": "35455",
+															"description": "(Required) Product ID"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										},
+										{
+											"name": "1/35455?date=2020-06-15T10:00:00",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=2020-06-15T10:00:00",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"price-api",
+														":brandId",
+														":productId"
+													],
+													"query": [
+														{
+															"key": "date",
+															"value": "2020-06-15T10:00:00",
+															"description": "(Required) Price date"
+														}
+													],
+													"variable": [
+														{
+															"key": "brandId",
+															"value": "1",
+															"description": "(Required) Brand ID"
+														},
+														{
+															"key": "productId",
+															"value": "35455",
+															"description": "(Required) Product ID"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										},
+										{
+											"name": "1/35455?date=2020-06-16T21:00:00",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/price-api/:brandId/:productId?date=2020-06-16T21:00:00",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"price-api",
+														":brandId",
+														":productId"
+													],
+													"query": [
+														{
+															"key": "date",
+															"value": "2020-06-16T21:00:00",
+															"description": "(Required) Price date"
+														}
+													],
+													"variable": [
+														{
+															"key": "brandId",
+															"value": "1",
+															"description": "(Required) Brand ID"
+														},
+														{
+															"key": "productId",
+															"value": "35455",
+															"description": "(Required) Product ID"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"body": null
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
