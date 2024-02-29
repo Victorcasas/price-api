@@ -1,17 +1,17 @@
-# Use an official Maven image as the base image
+# Stage de compilación Maven
 FROM maven:3.8.4-openjdk-17-slim AS build
-# Set the working directory in the container
-WORKDIR /app
-# Copy the pom.xml and the project files to the container
+WORKDIR /app 
+
 COPY pom.xml .
 COPY src ./src
-# Build the application using Maven
 RUN mvn clean package -DskipTests
-# Use an official eclipse-temurin image as the base image, trying to resolve erro in back4app
+
+# Stage de ejecución 
 FROM eclipse-temurin:17-jre
-# Set the working directory in the container
 WORKDIR /app
-# Copy the built JAR file from the previous stage to the container
-COPY - from=build /app/target/my-application.jar .
-# Set the command to run the application
+
+# Copiar el JAR generado en el stage de Maven
+COPY --from=build /app/target/my-application.jar .
+
+# Ejecutar el JAR
 CMD ["java", "-jar", "my-application.jar"]
