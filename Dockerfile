@@ -13,4 +13,4 @@ FROM eclipse-temurin:17-jre
 COPY --from=build /opt/priceapi.jar .
 
 # Ejecutar el JAR
-CMD ["java", "-jar", "my-application.jar"]
+CMD ["java", "-jar", "priceapi.jar"]
