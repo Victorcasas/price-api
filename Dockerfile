@@ -1,10 +1,12 @@
 # Stage de compilación Maven
 FROM maven:3.8.4-openjdk-17-slim AS build
-RUN cp target/priceapi.jar /opt/priceapi.jar 
 
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
+
+# Copiar el JAR justo después de compilar
+RUN cp target/priceapi.jar /opt/priceapi.jar 
 
 # Stage de ejecución 
 FROM eclipse-temurin:17-jre
