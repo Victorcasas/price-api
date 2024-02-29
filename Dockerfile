@@ -7,8 +7,8 @@ COPY pom.xml .
 COPY src ./src
 # Build the application using Maven
 RUN mvn clean package -DskipTests
-# Use an official OpenJDK image as the base image
-FROM openjdk:17-jdk-slim
+# Use an official eclipse-temurin image as the base image, trying to resolve erro in back4app
+FROM eclipse-temurin:17-jre
 # Set the working directory in the container
 WORKDIR /app
 # Copy the built JAR file from the previous stage to the container
