@@ -6,7 +6,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Copiar el JAR justo después de compilar
-RUN cp target/priceapi.jar /opt/priceapi.jar 
+RUN cp target/*.jar /opt/priceapi.jar 
 
 # Stage de ejecución 
 FROM eclipse-temurin:17-jre
