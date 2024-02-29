@@ -11,7 +11,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Copiar el JAR generado en el stage de Maven
-COPY --from=build /app/target/my-application.jar .
+COPY --from=build /app/target/priceapi.jar .
 
 # Ejecutar el JAR
 CMD ["java", "-jar", "my-application.jar"]
